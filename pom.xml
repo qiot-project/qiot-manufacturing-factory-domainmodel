@@ -51,6 +51,11 @@
             <version>1.0.0.alpha7-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-validator</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>
