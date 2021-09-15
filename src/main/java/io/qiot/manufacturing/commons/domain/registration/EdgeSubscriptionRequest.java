@@ -9,6 +9,8 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  */
 @RegisterForReflection
 public class EdgeSubscriptionRequest extends AbstractSubscriptionRequest {
+    
+    public String test="";
 
     @Override
     public String toString() {
