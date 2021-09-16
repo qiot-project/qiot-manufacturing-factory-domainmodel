@@ -1,5 +1,9 @@
 package io.qiot.manufacturing.commons.domain.registration;
 
+import javax.validation.constraints.NotNull;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import io.qiot.manufacturing.all.commons.domain.registration.AbstractSubscriptionRequest;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
@@ -9,8 +13,10 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  */
 @RegisterForReflection
 public class EdgeSubscriptionRequest extends AbstractSubscriptionRequest {
-    
-    public String test="";
+
+    @JsonProperty(value = "dummy")
+    @NotNull
+    public String dummy="dummy";
 
     @Override
     public String toString() {
