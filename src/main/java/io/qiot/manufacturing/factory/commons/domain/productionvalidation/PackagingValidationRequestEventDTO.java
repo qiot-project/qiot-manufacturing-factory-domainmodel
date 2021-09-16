@@ -1,6 +1,6 @@
-package io.qiot.manufacturing.commons.domain.productionvalidation;
+package io.qiot.manufacturing.factory.commons.domain.productionvalidation;
 
-import io.qiot.manufacturing.all.commons.domain.production.SizeMetricsDTO;
+import io.qiot.manufacturing.all.commons.domain.production.PackagingMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
@@ -8,14 +8,14 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  *
  */
 @RegisterForReflection
-public class WeavingValidationRequestEventDTO
+public class PackagingValidationRequestEventDTO
         extends AbstractValidationRequestEventDTO {
-    public SizeMetricsDTO data;
+    public PackagingMetricsDTO data;
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("WeavingValidationRequestEventDTO [machineryId=");
+        builder.append("PackagingValidationRequestEventDTO [machineryId=");
         builder.append(machineryId);
         builder.append(", productLineId=");
         builder.append(productLineId);

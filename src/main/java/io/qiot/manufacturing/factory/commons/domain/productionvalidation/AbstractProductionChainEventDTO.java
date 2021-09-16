@@ -1,4 +1,4 @@
-package io.qiot.manufacturing.commons.domain.productionvalidation;
+package io.qiot.manufacturing.factory.commons.domain.productionvalidation;
 
 import java.util.UUID;
 

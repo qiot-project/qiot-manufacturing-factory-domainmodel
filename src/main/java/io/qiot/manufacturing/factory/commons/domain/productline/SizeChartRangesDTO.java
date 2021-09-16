@@ -1,4 +1,4 @@
-package io.qiot.manufacturing.commons.domain.productline;
+package io.qiot.manufacturing.factory.commons.domain.productline;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 

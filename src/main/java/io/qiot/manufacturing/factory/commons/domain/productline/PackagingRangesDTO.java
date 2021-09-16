@@ -1,16 +1,16 @@
-package io.qiot.manufacturing.commons.domain.productline;
+package io.qiot.manufacturing.factory.commons.domain.productline;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
-public class PrintingRangesDTO {
+public class PackagingRangesDTO {
     public double min = 0;
     public double max = 1;
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("PrintingRangesDTO [min=");
+        builder.append("PackagingRangesDTO [min=");
         builder.append(min);
         builder.append(", max=");
         builder.append(max);

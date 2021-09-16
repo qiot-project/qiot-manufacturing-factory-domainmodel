@@ -1,6 +1,6 @@
-package io.qiot.manufacturing.commons.domain.productionvalidation;
+package io.qiot.manufacturing.factory.commons.domain.productionvalidation;
 
-import io.qiot.manufacturing.all.commons.domain.production.PrintingMetricsDTO;
+import io.qiot.manufacturing.all.commons.domain.production.ColorMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
@@ -8,14 +8,14 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  *
  */
 @RegisterForReflection
-public class PrintingValidationRequestEventDTO
+public class ColoringValidationRequestEventDTO
         extends AbstractValidationRequestEventDTO {
-    public PrintingMetricsDTO data;
+    public ColorMetricsDTO data;
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("PrintingValidationRequestEventDTO [machineryId=");
+        builder.append("ColoringValidationRequestEventDTO [machineryId=");
         builder.append(machineryId);
         builder.append(", productLineId=");
         builder.append(productLineId);
@@ -28,4 +28,5 @@ public class PrintingValidationRequestEventDTO
         builder.append("]");
         return builder.toString();
     }
+
 }
